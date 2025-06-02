@@ -1,0 +1,11 @@
+git branch feature-branch
+git checkout feature-branch
+echo "This is a new feature" >> feature.txt
+git add feature.txt
+git commit -m "Added feature"
+git push origin feature-branch
+
+# Switch back and merge
+git checkout master
+git merge feature-branch
+git push origin master
